@@ -3,7 +3,7 @@
    - Navegación y recursos propios: primero la caché, luego la red (la app abre sin señal).
    - El paquete de campo: primero la red, con respaldo en caché (se actualiza al reconectar).
    Los datos del usuario NO viven aquí: viven en IndexedDB. */
-const VERSION = "cft-campo-v0.5.2";
+const VERSION = "cft-campo-v0.5.3";
 const PAQUETE = "paquete/catalogo.json";
 
 self.addEventListener("install", (ev) => {
@@ -11,7 +11,7 @@ self.addEventListener("install", (ev) => {
     const cache = await caches.open(VERSION);
     const base = new URL("./", self.registration.scope);
     const lista = await fetch(new URL("precache.json", base), { cache: "no-store" }).then((r) => r.json());
-    const urls = ["./", "index.html", "manifest.webmanifest", "icono.svg", "icono-180.png", "icono-192.png", "icono-512.png", "icono-maskable-512.png",
+    const urls = ["./", "index.html", "manifest.webmanifest", "icono-180.png", "icono-192.png", "icono-512.png", "icono-maskable-512.png",
       ...lista.archivos].map((u) => new URL(u, base).href);
     await cache.addAll([...new Set(urls)]);
     try { await cache.add(new URL(PAQUETE, base).href); } catch (_) { /* paquete aún no preparado */ }

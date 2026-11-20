@@ -7,15 +7,9 @@
   "display": "standalone",
   "orientation": "any",
   "description": "IdenCyathea (BQS): identificación de Cyathea en campo con fotos guiadas, sugerencia de especie y decisión de colecta, sin conexión.",
-  "background_color": "#111915",
-  "theme_color": "#14532D",
+  "background_color": "#243424",
+  "theme_color": "#243424",
   "icons": [
-    {
-      "src": "icono.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
     {
       "src": "icono-192.png",
       "sizes": "192x192",
