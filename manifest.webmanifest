@@ -1,17 +1,44 @@
 {
-  "name": "Cyathea Field Twin · Campo",
-  "short_name": "Field Twin",
+  "name": "IdenCyathea",
+  "short_name": "IdenCyathea",
   "lang": "es-CO",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
-  "description": "App de campo de BQS para Cyathea: fotos guiadas, sugerencia de especie y decisión de colecta, sin conexión.",
+  "description": "IdenCyathea (BQS): identificación de Cyathea en campo con fotos guiadas, sugerencia de especie y decisión de colecta, sin conexión.",
   "background_color": "#111915",
   "theme_color": "#14532D",
   "icons": [
-    { "src": "icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
-    { "src": "icono-180.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
-  ]
+    {
+      "src": "icono.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icono-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "id": "./"
 }
